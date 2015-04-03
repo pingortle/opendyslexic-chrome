@@ -52,11 +52,11 @@ p {
     font-family: opendyslexic;
 }
 
-pre, code {
+pre *, code  *{
     font-family: opendyslexicmono !important;
     line-height: 150%;
 }
-.ace_text-input, .prettyprint {
+.ace_editor *, .prettyprint {
     font-family: opendyslexicmono !important;
 }
 
