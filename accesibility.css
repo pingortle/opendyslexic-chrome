@@ -30,12 +30,12 @@ src:url('chrome-extension://__MSG_@@extension_id__/fonts/OpenDyslexicMono-Regula
 }
 
 body {
-	color: rgb(25, 26, 66); 
+	color: rgb(25, 26, 66);
 	font-family: opendyslexic;
 }
 
 p:nth-child(even), li:nth-child(even) {
-	opacity: 
+	opacity:
 	background-color: rgba(0,0,0, 0.03);
 }
 
@@ -43,28 +43,35 @@ p:hover, li:hover {
    background-color: rgba(0,0,0, 0.09) !important;
 }
 
-p {
+p, h1, h2, h3, h4, h5, h6 {
     font-family: opendyslexic !important;
     line-height: 150%;
 }
 
-* {
+body:not([class*="text-diff-"]), .diffstat-bar,
+.diffstat-bar :not([class*="text-diff-"]) {
     font-family: opendyslexic;
 }
 
-pre, code {
+pre, pre *, code, code *, kbd, samp,
+.line-numbers > .line-number {
     font-family: opendyslexicmono !important;
     line-height: 150%;
 }
-.ace_text-input, .prettyprint {
+
+.ace_editor *,
+.prettyprint,
+.file .blob-wrapper .blob-num,
+.file .blob-wrapper .blob-code, .file .blob-wrapper .blob-code *,
+.commit .sha-block, .commit .sha, .commit .sha-block .sha, .sha {
     font-family: opendyslexicmono !important;
 }
-
 
 .original-tweet {
     background-color: #fff !important;
     }
 
-input, textarea {
+input, textarea, button, optgroup, select,
+a {
     font-family: opendyslexic !important;
 }
